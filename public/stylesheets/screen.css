@@ -1,0 +1,75 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+.box-sprite, .box-a, .box-b, .box-c {
+  background: url('../images/box-sae7e13d4b0.png') no-repeat;
+}
+
+.box-a {
+  background-position: 0 0;
+}
+
+.box-b {
+  background-position: 0 -100px;
+}
+
+.box-c {
+  background-position: 0 -150px;
+}
+
+.box2-a {
+  background: url('../images/box2-s72bde9ea6d.png') 0 0 no-repeat;
+}
+
+.box2-b {
+  background: url('../images/box2-s72bde9ea6d.png') 0 -100px no-repeat;
+}
+
+.box2-c {
+  background: url('../images/box2-s72bde9ea6d.png') 0 -150px no-repeat;
+}
+
+.box2-a {
+  background: url('../images/box2-s72bde9ea6d.png') 0 0 no-repeat;
+}
+
+.box2-b {
+  background: url('../images/box2-s72bde9ea6d.png') 0 -100px no-repeat;
+}
+
+.box2-c {
+  background: url('../images/box2-s72bde9ea6d.png') 0 -150px no-repeat;
+}
+
+.a {
+  width: 160px;
+  height: 100px;
+  position: absolute;
+  left: 45px;
+  top: 25px;
+}
+
+.b {
+  width: 80px;
+  height: 50px;
+  position: absolute;
+  left: 85px;
+  top: 50px;
+}
+
+.c {
+  width: 120px;
+  height: 50px;
+  position: absolute;
+  left: 65px;
+  top: 50px;
+}
+
+.bg {
+  width: 250px;
+  height: 150px;
+  margin: 20px;
+  background-color: #aaa;
+  position: relative;
+}

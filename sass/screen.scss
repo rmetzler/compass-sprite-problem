@@ -1,0 +1,74 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+
+@import "box/*.png";
+
+
+// this are is the size of the background box
+$bg-width:250px;
+$bg-height:150px;
+
+
+// first try
+$sprite-image-default-width: $bg-width;
+$sprite-image-default-height: $bg-height;
+$box-position:50%;
+@include all-box-sprites;
+
+
+// second try
+$box2: sprite-map("box2/*.png", $position: 50%);
+.box2-a {
+  background: sprite($box2, 'a') no-repeat;
+}
+
+.box2-b {
+  background: sprite($box2, b) no-repeat;
+}
+
+.box2-c {
+  background: sprite($box2, c) no-repeat;
+}
+
+
+//zweiter versuch
+$box2: sprite-map("box2/*.png", $position: 50%);
+.box2-a {
+  background: sprite($box2, 'a') no-repeat;
+}
+
+.box2-b {
+  background: sprite($box2, b) no-repeat;
+}
+
+.box2-c {
+  background: sprite($box2, c) no-repeat;
+}
+
+// this is how it works, but I would much rather like to not have to hardcode image sizes when calling the centered mixin
+
+@mixin centered ($element-width, $element-height){
+  width:$element-width;
+  height:$element-height;
+
+  position:absolute;    
+  left:($bg-width - $element-width) / 2;
+  top:($bg-height - $element-height) / 2;
+}
+
+.a { @include centered(160px, 100px);}
+.b { @include centered( 80px,  50px);}
+.c { @include centered(120px,  50px);}
+
+// background
+.bg {
+  width:$bg-width;
+  height:$bg-height;
+  margin:20px;
+  background-color:#aaa;
+  position:relative;
+}
