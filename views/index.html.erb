@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <p>The coloured box should be centered on the gray background.</p>
-    <p>
-      This is how it works, but it has several drawbacks:
-      <ul>
-          <li>I would like to not have an additional div element per box.</li>
-          <li>I don't like to hardcode image sizes in my css file</li>
-      </ul>
-    </p>
-    <div class="bg">
-      <div class="box-a a"></div>
+    <h1>The coloured boxes should be centered on the gray background.</h1>
+    <div class="fl">
+      <p>This works, but it has some drawbacks...</p>
+      <div class="bg">
+        <div class="box-a a"></div>
+      </div>
+      <div class="bg">
+        <div class="box-b b"></div>
+      </div>
+      <div class="bg">
+        <div class="box-c c"></div>
+      </div>
+
+      <p>
+        Drawbacks:
+        <ul>
+            <li>I would like to not have an additional div element per box.</li>
+            <li>I don't like to hardcode image sizes in my css file ( for a CMS ;-)</li>
+        </ul>
+      </p>
+
     </div>
-    <div class="bg">
-      <div class="box-b b"></div>
-    </div>
-    <div class="bg">
-      <div class="box-c c"></div>
+    
+    <div class="fl">
+      <p>first try</p>
+      <div class="bg box-a"></div>
+      <div class="bg box-b"></div>
+      <div class="bg box-c"></div>
     </div>
 
-    <p>erster versuch</p>
-    <div class="bg box-a"></div>
-    <div class="bg box-b"></div>
-    <div class="bg box-c"></div>
-
-    <p>zweiter versuch</p>
-    <div class="bg box2-a"></div>
-    <div class="bg box2-b"></div>
-    <div class="bg box2-c"></div>
+    <div class="fl">
+      <p>second try</p>
+      <div class="bg box2-a"></div>
+      <div class="bg box2-b"></div>
+      <div class="bg box2-c"></div>      
+    </div>
+    
   </body>
 </html>

@@ -16,6 +16,10 @@ $bg-height:150px;
 // first try
 $sprite-image-default-width: $bg-width;
 $sprite-image-default-height: $bg-height;
+$box-image-default-width: $bg-width;
+$box-image-default-height: $bg-height;
+$box-a-default-width: $bg-width;
+$box-a-default-height: $bg-height;
 $box-position:50%;
 @include all-box-sprites;
 
@@ -72,3 +76,4 @@ $box2: sprite-map("box2/*.png", $position: 50%);
   background-color:#aaa;
   position:relative;
 }
+.fl {float:left;}
