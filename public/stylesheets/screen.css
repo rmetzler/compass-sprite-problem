@@ -6,6 +6,10 @@
   background: url('../images/box-sae7e13d4b0.png') no-repeat;
 }
 
+.box3-sprite, .box3-a, .box3-b, .box3-c {
+  background: url('../images/box3-s7cc3599edd.png') no-repeat;
+}
+
 .box-a {
   background-position: 0 0;
 }
@@ -40,6 +44,22 @@
 
 .box2-c {
   background: url('../images/box2-s72bde9ea6d.png') 0 -150px no-repeat;
+}
+
+.box3-sprite, .box3-a, .box3-b, .box3-c {
+  background: url('../images/box3-s7cc3599edd.png') no-repeat;
+}
+
+.box3-a {
+  background-position: 0 0;
+}
+
+.box3-b {
+  background-position: 0 -100px;
+}
+
+.box3-c {
+  background-position: 0 -150px;
 }
 
 .a {

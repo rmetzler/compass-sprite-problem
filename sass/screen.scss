@@ -6,6 +6,7 @@
 @import "compass";
 
 @import "box/*.png";
+@import "box3/*.png";
 
 
 // this are is the size of the background box
@@ -52,6 +53,19 @@ $box2: sprite-map("box2/*.png", $position: 50%);
 .box2-c {
   background: sprite($box2, c) no-repeat;
 }
+
+// http://www.hagenburger.net/TMP/compass-sprites-position.png
+//$box3-a-position: (160px - $bg-width) / 2;
+//$box3-b-position: (100px - $bg-width) / 2;
+//$box3-c-position: (80px - $bg-width) / 2;
+$box3-a-position-x: -45px;
+$box3-a-position-y: -25px;
+$box3-b-position-x: -75px;
+$box3-b-position-y: -50px;
+$box3-c-position-x: -85px;
+$box3-c-position-y: -50px;
+@import "box3/*.png";
+@include all-box3-sprites;
 
 // this is how it works, but I would much rather like to not have to hardcode image sizes when calling the centered mixin
 
